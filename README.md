@@ -2,4 +2,4 @@
 
 _Código en_ `HTML` y `CSS`
 
-![M2 Desarrollo de páginas web - Formulario ](./img/formularioQUIZ_M2.png)
+![M2 Desarrollo de páginas web - Formulario ](./img/formularioQUIZ_M2_2.png)
