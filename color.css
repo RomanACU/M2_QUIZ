@@ -5,11 +5,19 @@
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #CFD7C7;
+    width: 100%;
+    color: #3a2b1f;
+}
+
+main {
+    width: 100%;
     padding: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 1.6;
-    color: #31241a;
+    background: linear-gradient(125deg, #5fcfa8, #b9ac70, #c68e89);
 }
 
 form {
@@ -17,7 +25,7 @@ form {
     margin: auto;
     background-color: whitesmoke;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     padding: 2rem;
 }
 
@@ -29,13 +37,17 @@ fieldset {
 legend {
     font-size: clamp(1rem, 0.5rem + 1.667vw, 2rem);
     font-weight: bold;
-    color: #568EA3;
+    color: #5E948E;
     margin-bottom: .3rem;
 }
 
 label {
     font-size: clamp(0.875rem, 0.75rem + 0.417vw, 1.125rem);
-    font-weight: 500;
+    font-weight: normal;
+}
+
+section {
+    width: 100%;
 }
 
 input[type="text"],
@@ -46,7 +58,7 @@ textarea {
     padding: 0.6rem;
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-size: 1rem;
     color: #31241a;
@@ -81,7 +93,7 @@ select {
     padding: 0.6rem;
     margin-top: 0.3rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid transparent;
     border-radius: 4px;
     font-size: clamp(0.875rem, 0.75rem + 0.417vw, 1.125rem);
     color: #31241a;
@@ -93,7 +105,7 @@ select option {
 }
 
 input[type="button"] {
-    background-color: #2292A4;
+    background-color: #365DE5;
     color: white;
     padding: 0.8rem 1.5rem;
     border: 1px solid transparent;
@@ -105,8 +117,8 @@ input[type="button"] {
 
 input[type="button"]:hover {
     background-color: #ececec;
-    color: #2292A4;
-    border: 1px solid #2292A4;
+    color: #365DE5;
+    border: 1px solid #365DE5;
 }
 
 form .botones {

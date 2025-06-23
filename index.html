@@ -8,232 +8,281 @@
   </head>
 
   <body>
-    <form action="post">
-      <fieldset>
-        <legend>DATOS PERSONALES</legend>
-        <label for="nombre">Nombre: </label>
-        <input type="text" id="nombre" name="nombre" required /><br />
-        <label for="edad">Edad: </label>
-        <input
-          type="number"
-          name="edad"
-          id="edad"
-          min="18"
-          max="120"
-          required
-        /><br />
-        <label for="genero">Género</label>
-        <select id="genero" name="genero" required>
-          <option value="" disabled selected>Selecciona una opción</option>
-          <option value="femenino">Femenino</option>
-          <option value="masculino">Masculino</option>
-          <option value="no-binario">No binario</option>
-          <option value="otro">Otro</option>
-          <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
-        </select>
-      </fieldset>
+    <main>
+      <form action="post">
+        <section class="datos">
+          <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required /><br />
+            <label for="edad">Edad: </label>
+            <input
+              type="number"
+              name="edad"
+              id="edad"
+              min="18"
+              max="120"
+              required
+            /><br />
+            <label for="genero">Género</label>
+            <select id="genero" name="genero" required>
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="femenino">Femenino</option>
+              <option value="masculino">Masculino</option>
+              <option value="no-binario">No binario</option>
+              <option value="otro">Otro</option>
+              <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+            </select>
+          </fieldset>
+        </section>
+        <section class="quiz">
+          <fieldset>
+            <legend>CUESTIONARIO</legend>
+            <p>
+              ¿Cuál es el país con más hablantes nativos de español en el mundo?
+            </p>
+            <input
+              type="radio"
+              id="mexico"
+              name="lenguaje"
+              value="México"
+              required
+            />
+            <label for="mexico">México</label><br />
+            <input type="radio" id="espana" name="lenguaje" value="España" />
+            <label for="espana">España</label><br />
+            <input
+              type="radio"
+              id="argentina"
+              name="lenguaje"
+              value="Argentina"
+            />
+            <label for="argentina">Argentina</label><br />
+            <input
+              type="radio"
+              id="colombia"
+              name="lenguaje"
+              value="Colombia"
+            />
+            <label for="colombia">Colombia</label>
 
-      <fieldset>
-        <legend>CUESTIONARIO</legend>
-        <p>
-          ¿Cuál es el país con más hablantes nativos de español en el mundo?
-        </p>
-        <input
-          type="radio"
-          id="mexico"
-          name="lenguaje"
-          value="México"
-          required
-        />
-        <label for="mexico">México</label><br />
-        <input type="radio" id="espana" name="lenguaje" value="España" />
-        <label for="espana">España</label><br />
-        <input type="radio" id="argentina" name="lenguaje" value="Argentina" />
-        <label for="argentina">Argentina</label><br />
-        <input type="radio" id="colombia" name="lenguaje" value="Colombia" />
-        <label for="colombia">Colombia</label>
+            <p>
+              ¿Qué empresa tecnológica desarrolló el sistema operativo Windows?
+            </p>
+            <input type="radio" id="apple" name="tecnologia" value="Apple" />
+            <label for="apple">Apple</label><br />
+            <input
+              type="radio"
+              id="microsoft"
+              name="tecnologia"
+              value="Microsoft"
+              required
+            />
+            <label for="microsoft">Microsoft</label><br />
+            <input type="radio" id="google" name="tecnologia" value="Google" />
+            <label for="google">Google</label><br />
+            <input type="radio" id="ibm" name="tecnologia" value="IBM" />
+            <label for="ibm">IBM</label>
 
-        <p>¿Qué empresa tecnológica desarrolló el sistema operativo Windows?</p>
-        <input type="radio" id="apple" name="tecnologia" value="Apple" />
-        <label for="apple">Apple</label><br />
-        <input
-          type="radio"
-          id="microsoft"
-          name="tecnologia"
-          value="Microsoft"
-          required
-        />
-        <label for="microsoft">Microsoft</label><br />
-        <input type="radio" id="google" name="tecnologia" value="Google" />
-        <label for="google">Google</label><br />
-        <input type="radio" id="ibm" name="tecnologia" value="IBM" />
-        <label for="ibm">IBM</label>
+            <p>¿Quién pintó la obra 'La noche estrellada'?</p>
+            <input type="radio" id="pablo" name="obra" value="Pablo Picasso" />
+            <label for="pablo">Pablo Picasso</label><br />
+            <input
+              type="radio"
+              id="vincent"
+              name="obra"
+              value="Vincent van Gogh"
+              required
+            />
+            <label for="vincent">Vincent van Gogh</label><br />
+            <input
+              type="radio"
+              id="leonardo"
+              name="obra"
+              value="Leonardo da Vinci"
+            />
+            <label for="leonardo">Leonardo da Vinci</label><br />
+            <input type="radio" id="claude" name="obra" value="Claude Monet" />
+            <label for="claude">Claude Monet</label>
 
-        <p>¿Quién pintó la obra 'La noche estrellada'?</p>
-        <input type="radio" id="pablo" name="obra" value="Pablo Picasso" />
-        <label for="pablo">Pablo Picasso</label><br />
-        <input
-          type="radio"
-          id="vincent"
-          name="obra"
-          value="Vincent van Gogh"
-          required
-        />
-        <label for="vincent">Vincent van Gogh</label><br />
-        <input
-          type="radio"
-          id="leonardo"
-          name="obra"
-          value="Leonardo da Vinci"
-        />
-        <label for="leonardo">Leonardo da Vinci</label><br />
-        <input type="radio" id="claude" name="obra" value="Claude Monet" />
-        <label for="claude">Claude Monet</label>
+            <p>¿Qué significa la sigla 'HTML' en tecnología?</p>
+            <input
+              type="radio"
+              id="htm"
+              name="sigla"
+              value="Hyper Text Markup Language"
+              required
+            />
+            <label for="htm">Hyper Text Markup Language</label><br />
+            <input
+              type="radio"
+              id="tech"
+              name="sigla"
+              value="High Tech Machine Learning"
+            />
+            <label for="tech">High Tech Machine Learning</label><br />
+            <input
+              type="radio"
+              id="hyperlink"
+              name="sigla"
+              value="Hyperlink Text Management Language"
+            />
+            <label for="hyperlink">Hyperlink Text Management Language</label
+            ><br />
+            <input
+              type="radio"
+              id="transfer"
+              name="sigla"
+              value="Hyper Transfer Media Language"
+            />
+            <label for="transfer">Hyper Transfer Media Language</label>
 
-        <p>¿Qué significa la sigla 'HTML' en tecnología?</p>
-        <input
-          type="radio"
-          id="htm"
-          name="sigla"
-          value="Hyper Text Markup Language"
-          required
-        />
-        <label for="htm">Hyper Text Markup Language</label><br />
-        <input
-          type="radio"
-          id="tech"
-          name="sigla"
-          value="High Tech Machine Learning"
-        />
-        <label for="tech">High Tech Machine Learning</label><br />
-        <input
-          type="radio"
-          id="hyperlink"
-          name="sigla"
-          value="Hyperlink Text Management Language"
-        />
-        <label for="hyperlink">Hyperlink Text Management Language</label><br />
-        <input
-          type="radio"
-          id="transfer"
-          name="sigla"
-          value="Hyper Transfer Media Language"
-        />
-        <label for="transfer">Hyper Transfer Media Language</label>
+            <p>¿Cuál es el río más largo del mundo?</p>
+            <input
+              type="radio"
+              id="amazonas"
+              name="rio"
+              value="Río Amazonas"
+              required
+            />
+            <label for="amazonas">Río Amazonas</label><br />
+            <input type="radio" id="nilo" name="rio" value="Río Nilo" />
+            <label for="nilo">Río Nilo</label><br />
+            <input type="radio" id="yangtse" name="rio" value="Río Yangtsé" />
+            <label for="yangtse">Río Yangtsé</label><br />
+            <input type="radio" id="misisipi" name="rio" value="Río Misisipi" />
+            <label for="misisipi">Río Misisipi</label>
 
-        <p>¿Cuál es el río más largo del mundo?</p>
-        <input
-          type="radio"
-          id="amazonas"
-          name="rio"
-          value="Río Amazonas"
-          required
-        />
-        <label for="amazonas">Río Amazonas</label><br />
-        <input type="radio" id="nilo" name="rio" value="Río Nilo" />
-        <label for="nilo">Río Nilo</label><br />
-        <input type="radio" id="yangtse" name="rio" value="Río Yangtsé" />
-        <label for="yangtse">Río Yangtsé</label><br />
-        <input type="radio" id="misisipi" name="rio" value="Río Misisipi" />
-        <label for="misisipi">Río Misisipi</label>
+            <p>
+              ¿Qué empresa creó el primer teléfono inteligente conocido como el
+              iPhone?
+            </p>
+            <input type="radio" id="samsung" name="movil" value="Samsung" />
+            <label for="samsung">Samsung</label><br />
+            <input
+              type="radio"
+              id="apple"
+              name="movil"
+              value="Apple"
+              required
+            />
+            <label for="apple">Apple</label><br />
+            <input type="radio" id="nokia" name="movil" value="Nokia" />
+            <label for="nokia">Nokia</label><br />
+            <input
+              type="radio"
+              id="blackberry"
+              name="movil"
+              value="BlackBerry"
+            />
+            <label for="blackberry">BlackBerry</label>
 
-        <p>
-          ¿Qué empresa creó el primer teléfono inteligente conocido como el
-          iPhone?
-        </p>
-        <input type="radio" id="samsung" name="movil" value="Samsung" />
-        <label for="samsung">Samsung</label><br />
-        <input type="radio" id="apple" name="movil" value="Apple" required />
-        <label for="apple">Apple</label><br />
-        <input type="radio" id="nokia" name="movil" value="Nokia" />
-        <label for="nokia">Nokia</label><br />
-        <input type="radio" id="blackberry" name="movil" value="BlackBerry" />
-        <label for="blackberry">BlackBerry</label>
+            <p>¿Cuáles son las tecnologías para el frontend?</p>
+            <input
+              type="checkbox"
+              id="html"
+              name="movil"
+              value="HTML"
+              required
+            />
+            <label for="html">HTML</label><br />
+            <input type="checkbox" id="python" name="movil" value="Python" />
+            <label for="python">Python</label><br />
+            <input type="checkbox" id="css" name="movil" value="CSS" required />
+            <label for="css">CSS</label><br />
+            <input type="checkbox" id="java" name="movil" value="Java" />
+            <label for="java">Java</label>
 
-        <p>¿Cuáles son las tecnologías para el frontend?</p>
-        <input type="checkbox" id="html" name="movil" value="HTML" required />
-        <label for="html">HTML</label><br />
-        <input type="checkbox" id="python" name="movil" value="Python" />
-        <label for="python">Python</label><br />
-        <input type="checkbox" id="css" name="movil" value="CSS" required />
-        <label for="css">CSS</label><br />
-        <input type="checkbox" id="java" name="movil" value="Java" />
-        <label for="java">Java</label>
+            <p>¿Cuáles de los siguientes son sistemas operativos populares?</p>
+            <input
+              type="checkbox"
+              id="windows"
+              name="movil"
+              value="Windows"
+              required
+            />
+            <label for="windows">Windows</label><br />
+            <input
+              type="checkbox"
+              id="macos"
+              name="movil"
+              value="macOS"
+              required
+            />
+            <label for="macos">macOS</label><br />
+            <input
+              type="checkbox"
+              id="linux"
+              name="movil"
+              value="Linux"
+              required
+            />
+            <label for="linux">Linux</label><br />
+            <input
+              type="checkbox"
+              id="android"
+              name="movil"
+              value="Android"
+              required
+            />
+            <label for="android">Android</label>
 
-        <p>¿Cuáles de los siguientes son sistemas operativos populares?</p>
-        <input
-          type="checkbox"
-          id="windows"
-          name="movil"
-          value="Windows"
-          required
-        />
-        <label for="windows">Windows</label><br />
-        <input type="checkbox" id="macos" name="movil" value="macOS" required />
-        <label for="macos">macOS</label><br />
-        <input type="checkbox" id="linux" name="movil" value="Linux" required />
-        <label for="linux">Linux</label><br />
-        <input
-          type="checkbox"
-          id="android"
-          name="movil"
-          value="Android"
-          required
-        />
-        <label for="android">Android</label>
-
-        <p>
-          ¿Cuáles de los siguientes son servicios de almacenamiento en la nube?
-        </p>
-        <input
-          type="checkbox"
-          id="drive"
-          name="movil"
-          value="Google Drive"
-          required
-        />
-        <label for="drive">Google Drive</label><br />
-        <input
-          type="checkbox"
-          id="dropbox"
-          name="movil"
-          value="Dropbox"
-          required
-        />
-        <label for="dropbox">Dropbox</label><br />
-        <input
-          type="checkbox"
-          id="onedrive"
-          name="movil"
-          value="OneDrive"
-          required
-        />
-        <label for="onedrive">OneDrive</label><br />
-        <input
-          type="checkbox"
-          id="icloud"
-          name="movil"
-          value="iCloud"
-          required
-        />
-        <label for="icloud">iCloud</label>
-      </fieldset>
-
-      <fieldset>
-        <legend>COMENTARIOS</legend>
-        <p><label for="comentario">Deja un comentario:</label></p>
-        <textarea
-          id="comentario"
-          name="comentario"
-          rows="5"
-          cols="100"
-          required
-        ></textarea>
-      </fieldset>
-      <div class="botones">
-        <input type="button" value="Siguiente" />
-        <input type="button" value="Enviar" />
-      </div>
-    </form>
+            <p>
+              ¿Cuáles de los siguientes son servicios de almacenamiento en la
+              nube?
+            </p>
+            <input
+              type="checkbox"
+              id="drive"
+              name="movil"
+              value="Google Drive"
+              required
+            />
+            <label for="drive">Google Drive</label><br />
+            <input
+              type="checkbox"
+              id="dropbox"
+              name="movil"
+              value="Dropbox"
+              required
+            />
+            <label for="dropbox">Dropbox</label><br />
+            <input
+              type="checkbox"
+              id="onedrive"
+              name="movil"
+              value="OneDrive"
+              required
+            />
+            <label for="onedrive">OneDrive</label><br />
+            <input
+              type="checkbox"
+              id="icloud"
+              name="movil"
+              value="iCloud"
+              required
+            />
+            <label for="icloud">iCloud</label>
+          </fieldset>
+        </section>
+        <section class="comentario">
+          <fieldset>
+            <legend>COMENTARIOS</legend>
+            <p><label for="comentario">Deja un comentario:</label></p>
+            <textarea
+              id="comentario"
+              name="comentario"
+              rows="5"
+              cols="100"
+              required
+            ></textarea>
+          </fieldset>
+          <div class="botones">
+            <input type="button" value="Siguiente" />
+            <input type="button" value="Enviar" />
+          </div>
+        </section>
+      </form>
+    </main>
   </body>
 </html>
