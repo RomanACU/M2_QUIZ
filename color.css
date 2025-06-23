@@ -51,6 +51,7 @@ textarea {
     font-size: 1rem;
     color: #31241a;
 }
+
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 0.5rem;
@@ -74,20 +75,23 @@ textarea:focus {
     border-color: #70A9A1;
     outline: none;
 }
+
 select {
-  width: 100%;
-  padding: 0.6rem;
-  margin-top: 0.3rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: clamp(0.875rem, 0.75rem + 0.417vw, 1.125rem);
-  color: #31241a;
-  background-color: white;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: clamp(0.875rem, 0.75rem + 0.417vw, 1.125rem);
+    color: #31241a;
+    background-color: white;
 }
-select option{
-     font-weight: normal;
+
+select option {
+    font-weight: normal;
 }
+
 input[type="button"] {
     background-color: #2292A4;
     color: white;
